@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эльфы против Дракона</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Эльфы против Дракона</h1>
+    <p>Управление: ← → — движение, пробел — прыжок, X — атака (на боссе)</p>
+  </header>
+  <main>
+    <section id="hud">
+      <div><strong>Уровень:</strong> <span id="level-name"></span></div>
+      <div><strong>Кристаллы:</strong> <span id="crystals"></span></div>
+      <div><strong>Жизни:</strong> <span id="lives"></span></div>
+      <div><strong>Прогресс:</strong> <span id="progress"></span></div>
+    </section>
+    <canvas id="game" width="800" height="600"></canvas>
+    <section id="messages">
+      <button id="new-game">Начать заново</button>
+      <button id="continue">Продолжить</button>
+      <div id="story"></div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
